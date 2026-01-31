@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
-import { Button } from "@/components/Button";
+import { Button } from "@/Components/Button";
 import emailjs from "@emailjs/browser";
 
 /* rest of your Contact code unchanged */
