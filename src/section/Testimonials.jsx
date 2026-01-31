@@ -5,12 +5,12 @@
         {
             Quote:"Emmanuel is passionate on his works with the highest level of commitment to his job. He has a very positive and optimistic relationship with teammates, both as Senior Quality Assurance and Scrum Master, making sure the team is working based on Agile principles - achieving KPIs and maintaining high velocity. Emmanuel has become a very valuable asset to the team ensuring high quality throughout to the business both non-functional requirements and process automation. He's one of the 2 pillars of ProV's development team on automated testing",
             author:"Suresh Baddula & Ajit Nair",
-            role: "VP, Opeartions & Delivery : CEO, Founder & Chairman",
+            role: "VP at ProV, Opeartions & Delivery : CEO, Founder & Chairman",
         },
         {
             Quote:"Emmanuel has become a very valuable asset to the team ensuring high quality throughout to the business both non-functional requirements and process automation. He's one of the 2 pillars of ProV's development team on automated testing. I am pleased to nominate Emmanuel for the Q2 award. I have known and worked with him for more than 4 years and have always found him dependable, efficient and unfailingly punctual. Also, his willingness to take on difficult projects in VISMA and SYNLAB have been outstanding",
             author:"Mark Andrew Many",
-            role: "Project Manager",
+            role: "Project Manager at ProV",
         },
     ];
 

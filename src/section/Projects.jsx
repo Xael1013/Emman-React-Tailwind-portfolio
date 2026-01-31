@@ -20,11 +20,19 @@ const project = [
   },
   {
     title: "Automated Daily Weather + Inspiration Post",
-    description:"End-to-end workflow that automatically generates ASMR reels and short videos—from AI prompt creation and video generation to format conversion and auto-uploading on Facebook and YouTube. 🎧📹",
+    description:"This workflow fetches the latest daily weather update from AccuWeather, pairs it with an inspirational quote, and overlays both onto a visually appealing background image sourced online. The final image is automatically published to Facebook, delivering timely weather info with a daily dose of motivation—hands-free, every day. 🌤️✨",
     image: "/Project/VA.png",
     tags: ["n8n"],
     github: "#",
     video: "/Project/VA.mp4",
+  },
+  {
+    title: "AI agent for Facebook Health Insurance Lead Assistant",
+    description:"An AI-powered automation workflow that connects a Facebook Page to an AI Agent to handle lead and customer inquiries about various health insurance plans. Incoming messages are captured via webhook, filtered, enriched with relevant documents, and processed by the AI Agent with memory and model support, then automatically replied to in real time—ensuring fast, consistent, and accurate customer engagement.",
+    image: "/Project/Health.png",
+    tags: ["n8n"],
+    github: "#",
+    video: "/Project/Health.mp4",
   },
 
   {

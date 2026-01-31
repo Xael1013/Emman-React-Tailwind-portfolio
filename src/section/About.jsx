@@ -57,7 +57,7 @@ export const About = () => {
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
                 I am a Senior Software QA Analyst with extensive experience in manual and automation testing across enterprise,
-                healthcare, finance, and telecom systems. I have worked throughout the full software development lifecycle,
+                healthcare, banking, finance, and telecom systems. I have worked throughout the full software development lifecycle,
                 collaborating with cross-functional and international teams to ensure high-quality, reliable, and compliant applications.
                 Recently, I have expanded my expertise into AI automation using tools like Zapier and n8n to streamline workflows and
                 improve operational efficiency.

@@ -11,14 +11,13 @@ const skills =[
     "Jira",
     "Selenium",
     "Postman",
-    "Cypress",
     "Mantis",
     "OATS",
     "HTML",
     "CSS",
     "JavaScript",
     "JSP",
-    "MYSQL",
+    "MYSQL",  
     "PostgreSQL",
     "Java",
     "Oracle DB",
@@ -78,42 +77,43 @@ export const Hero = () => {
                   works
                 </span>
                 <br />
-                <span className="text-primary glow-text">Automation</span> makes it{" "}
+                <span className="text-primary glow-text">AI Automation</span> makes it{" "}
                 <span className="font-serif italic font-normal text-white">
                   work without you
                 </span>
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Emmanuel Recaña, a QA Tester specializing in AI Automation.
-                I help businesses enhance software quality and efficiency through
-                cutting-edge AI-driven testing solutions.
+               Hi, I’m Emmanuel Recaña, a Senior QA Analyst focused on ensuring software quality, reliability, and performance.I also specialize in AI Automation, helping businesses improve efficiency through intelligent, AI-driven testing solutions.
               </p>
             </div>
 
-            {/* CTAS */}
-          <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-            <Button size="lg">
-              Contact me <ArrowRight className="w-5 h-5" />
-            </Button>
+           {/* CTAS */}
+<div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+  <a href="#contact">
+    <Button size="lg">
+      Contact me <ArrowRight className="w-5 h-5" />
+    </Button>
+  </a>
 
-            {/* Wrap AnimatedBorderButton in <a> for download */}
-            <a href="/Project/Emmanuel-Recaña-CV.pdf" download>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
-            </a>
-          </div>
+  {/* Wrap AnimatedBorderButton in <a> for download */}
+  <a href="/Project/Emmanuel-Recaña-CV.pdf" download>
+    <AnimatedBorderButton>
+      <Download className="w-5 h-5" />
+      Download CV
+    </AnimatedBorderButton>
+  </a>
+</div>
+
 
 
             {/* Social */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me:</span>
               {[
-                { icon: Linkedin, href: "#" },
-                { icon: Github, href: "#" },
-                { icon: Briefcase, href: "#" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/emmanuel-recana-696531263/" },
+                { icon: Github, href: "https://github.com/elfstrike" },
+                { icon: Briefcase, href: "https://v2.onlinejobs.ph/jobseekers/info/4537090" },
               ].map((social, idx) => (
                 <a
                   key={idx}

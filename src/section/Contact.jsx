@@ -16,7 +16,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+0 (968) 857-2237",
+    value: "+63 (968) 857-2237",
     href: "tel:+09688572237",
   },
   {
