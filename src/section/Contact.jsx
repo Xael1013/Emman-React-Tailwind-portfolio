@@ -3,6 +3,9 @@ import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-reac
 import { Button } from "@/components/Button";
 import emailjs from "@emailjs/browser";
 
+/* rest of your Contact code unchanged */
+
+
 const contactInfo = [
   {
     icon: Mail,
