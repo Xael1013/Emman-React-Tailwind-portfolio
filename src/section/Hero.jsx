@@ -26,10 +26,9 @@ export const Hero = () => {
   const [showCertifications, setShowCertifications] = useState(false);
   const [selectedCert, setSelectedCert] = useState(certifications[0]);
   const [certFade, setCertFade] = useState(false);
-  const [lightboxOpen, setLightboxOpen] = useState(false); // lightbox state
-  const [closing, setClosing] = useState(false); // smooth closing animation
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
 
-  // Floating dots positions (do not reset)
   const [dots] = useState(() =>
     [...Array(30)].map(() => ({
       left: `${Math.random() * 100}%`,
@@ -42,7 +41,7 @@ export const Hero = () => {
   const handleClose = () => {
     setShowCertifications(false);
     setClosing(false);
-    setLightboxOpen(false); // close lightbox if modal closes
+    setLightboxOpen(false);
   };
 
   const handleCertClick = (cert) => {
@@ -58,7 +57,7 @@ export const Hero = () => {
     setTimeout(() => {
       setLightboxOpen(false);
       setClosing(false);
-    }, 300); // matches CSS transition
+    }, 300);
   };
 
   return (
@@ -86,7 +85,7 @@ export const Hero = () => {
         ))}
       </div>
 
-      {/* Contents (blur when modal or lightbox opens) */}
+      {/* Contents (blur when modal/lightbox) */}
       <div className={`container mx-auto px-6 pt-32 pb-20 relative z-10 transition-all duration-500 ${showCertifications || lightboxOpen ? "blur-sm" : ""}`}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left column */}
@@ -160,7 +159,7 @@ export const Hero = () => {
                   alt="Emmanuel Recaña"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
-                {/* floating badge */}
+                {/* Floating badge */}
                 <div className="absolute -bottom-4 right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-400/50"/>
@@ -173,6 +172,20 @@ export const Hero = () => {
                   <div className="text-xs text-muted-foreground">Years Exp Senior QA Analyst.</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Skills */}
+        <div className="mt-20 animate-fade-in animation-delay-600">
+          <p className="text-sm text-muted-foreground mb-6 text-center">Technologies I work with</p>
+          <div className="relative overflow-hidden">
+            <div className="flex animate-marquee">
+              {[...skills, ...skills].map((skill, idx) => (
+                <div key={idx} className="shrink-0 px-8 py-4">
+                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -237,9 +250,7 @@ export const Hero = () => {
       {/* Lightbox */}
       {lightboxOpen && (
         <div
-          className={`fixed inset-0 z-60 flex items-center justify-center bg-black/80 backdrop-blur-sm cursor-zoom-out transition-all duration-300 ${
-            closing ? "opacity-0 scale-95" : "opacity-100 scale-100"
-          }`}
+          className={`fixed inset-0 z-60 flex items-center justify-center bg-black/80 backdrop-blur-sm cursor-zoom-out transition-all duration-300 ${closing ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
           onClick={handleLightboxClose}
         >
           <img
@@ -256,17 +267,14 @@ export const Hero = () => {
           0%, 100% { box-shadow: 0 0 20px #20B2A6, 0 0 40px #20B2A6 inset; }
           50% { box-shadow: 0 0 40px #20B2A6, 0 0 60px #20B2A6 inset; }
         }
-
         .glow-border-glow {
           border: 2px solid #20B2A6;
           animation: glow-border-animation 2s ease-in-out infinite;
         }
-
         @keyframes fade-in {
           from { opacity: 0; transform: scale(0.95); }
           to { opacity: 1; transform: scale(1); }
         }
-
         .animate-fade-in {
           animation: fade-in 0.3s ease-out forwards;
         }
