@@ -49,7 +49,7 @@ const project = [
     image: "/Project/Asana.jpg",
     tags: ["Zapier"],
     github: "#",
-    link: "#",
+    video:"#",
   },
   {
     title: "Currencny Converter for the Product Prices",
@@ -57,7 +57,7 @@ const project = [
     image: "/Project/Currency.jpg",
     tags: ["Zapier"],
     github: "#",
-    link: "#",
+    video:"#",
   },
   {
     title: "Automated Leads Enrichments",
@@ -65,7 +65,7 @@ const project = [
     image: "/Project/Lead.jpg",
     tags: ["Zapier"],
     github: "#",
-    link: "#",
+    video:"#",
   },
 
   
