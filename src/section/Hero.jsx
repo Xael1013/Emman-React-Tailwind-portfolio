@@ -17,7 +17,7 @@ const certifications = [
   },
   {
     title: "ISTQB Foundation Level",
-    image: "/Project/Certificate.jpg",
+    image: "/Project/ISTQB.jpg",
     description: "Proficient in Selenium automation for web applications.",
   },
 ];
